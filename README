@@ -1,0 +1,18 @@
+Local setup, this app require follow local installation:
+
+For mac install from brew 
+    1.- Maven : brew install maven
+    2.- openJDK: brew install openjdk
+
+Once installed software dependencies, run follow commands
+    1.- mvn clean install
+    2.- mvn spring-boot: run
+
+To package, run follow commands:
+    1.- mvn package  
+    
+    For escape test: 
+        1.- mvn -DskipTests=true  package
+
+
+Base code was generate at https://start.spring.io/ 
