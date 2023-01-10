@@ -6,7 +6,9 @@ For mac install from brew
 
 Once installed software dependencies, run follow commands
     1.- mvn clean install
-    2.- mvn spring-boot: run
+    2.- mvn spring-boot:run
+
+Note: Make sure remove any space after ":", otherwisw it will trigger an error.    
 
 To package, run follow commands:
     1.- mvn package  
