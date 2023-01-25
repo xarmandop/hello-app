@@ -17,4 +17,26 @@ To package, run follow commands:
         1.- mvn -DskipTests=true  package
 
 
+#If you running locally
+http://localhost:8080
+
+
+#create the image from dockerfile
+docker build -t  IMAGE-NAME>:TAG DOCKERFILE-PATH
+
+#e.g.
+docker build -t my-app:0.9 .
+
+#create docker contaier
+docker run -d -p 8080:8080 --name=hello-app <image-name>
+
+#create pod from yaml
+kubectl create -f POD-FILE.yaml
+
+#create pod imperative
+kubectl create NAME --image=IMAGE-PATH --port=PORTNUMBER 
+
+#e.g.
+kubectl run hello-app-tt2 --image=xarmando/spring-boot-hello:1.0 --port=80
+
 Base code was generate at https://start.spring.io/ 

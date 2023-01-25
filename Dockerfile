@@ -1,3 +1,4 @@
+#andale
 FROM openjdk:11-jre-slim
 WORKDIR /app
 COPY target/spring-boot-hello-1.0.jar spring-boot-hello-1.0.jar

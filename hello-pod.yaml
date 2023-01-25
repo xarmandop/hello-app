@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: hello-app-2023
+  name: hello-app-2023
+spec:
+  containers:
+  - image: xarmando/spring-boot-hello:0.1
+    name: hello-app-2023
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
